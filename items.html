@@ -1,0 +1,30 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Blocks</h1>
+  
+  <ul> 
+ <div class="column1">
+    <li><a href="block.html" onclick="goToBlock('Amethyst Shard')">Amethyst Shard</a></li>
+    <li><a href="block.html" onclick="goToBlock('')">Amethyst Shard</a></li>
+    <li><a href="block.html" onclick="goToBlock('Blaze Rod')">Blaze Rod/Blaze Powder</a></li>
+    <li><a href="block.html" onclick="goToBlock('Bone')">Bone</a></li>
+    <li><a href="block.html" onclick="goToBlock('Clay ball')">Clay ball</a></li>
+    <li><a href="block.html" onclick="goToBlock('Coal')">Coal</a></li>
+  </ul>
+  
+ </div>
+ 
+</body>
+
+<script>
+  function goToBlock(blockName) {
+    localStorage.setItem("blockName",blockName);
+    window.location = "block.html"
+  }
+</script>
+
+</html>

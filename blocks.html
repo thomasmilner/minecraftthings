@@ -1,0 +1,57 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Blocks</h1>
+  
+  <div class="column2">
+  <img src="Cobblestone.webp"><img src="Terracotta_JE2_BE2.webp">
+  <ul>
+    <li><a href="block.html" onclick="goToBlock(0)">Ice</a></li>
+    <li><a href="block.html" onclick="goToBlock(1)">Ancient Debris</a></li>
+    <li><a href="block.html" onclick="goToBlock(2)">Sand</a></li>
+    <li><a href="block.html" onclick="goToBlock(3)">Sandstone</a></li>
+    <li><a href="block.html" onclick="goToBlock(4)">Cobblestone</a></li>
+    <li><a href="block.html" onclick="goToBlock(5)">Oak wood</a></li>
+    <li><a href="block.html" onclick="goToBlock(6)">Dirt</a></li>
+    <li><a href="block.html" onclick="goToBlock(7)">Podzol</a></li>
+
+    <li><a href="Lodestone.html">Lodestone</a></li>
+    <li><a href="Andesite.html">Andesite</a></li>
+    <li><a href="Granite.html">Granite</a></li>
+    <li><a href="Diorite.html">Diorite</a></li>
+    <li><a href="Tuff.html">Tuff</a></li>
+    <li><a href="Calcite.html">Calcite</a></li>
+    <li><a href="Deepslate.html">Diorite</a></li>
+    <li><a href="Glowstone.html">Glowstone</a></li>
+    <li><a href="Blackstone.html">Blackstone</a></li>
+    <li><a href="Polished-Blackstone.html">Polished Blackstone</a></li>
+    <li><a href="Basalt.html">Basalt</a></li>
+    <li><a href="End-Stone.html">End Stone</a></li>
+    <li><a href="End-Stone-Bricks.html">End Stone Bricks</a></li>
+    <li><a href="Terracotta.html">Terracotta</a></li>
+    <li><a href="Netherack.html">Netherack</a></li>
+    <li><a href="Obsidian.html">Obsidian</a></li>
+    <li><a href="Soul-Sand.html">Soul-Sand</a></li>
+    <li><a href="Soul-Soil.html">Soul Soil</a></li>
+    <li><a href="Podzol.html">Podzol</a></li>
+    <li><a href="Mycelium.html">Mycelium</a></li>
+    <li><a href="Nylium.html">Nylium</a></li>
+    <li><a href="Gravel.html">Gravel</a></li>
+    <li><a href="Clay.html">Clay</a></li>
+  </ul>
+  
+ </div>
+ 
+</body>
+
+<script>
+  function goToBlock(blockName) {
+    localStorage.setItem("blockName",blockName);
+    window.location = "block.html"
+  }
+</script>
+
+</html>
