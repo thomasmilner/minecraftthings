@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Mobs</h1>
+  
+  <div class="column2">
+  <img src="Cobblestone.webp"><img src="Terracotta_JE2_BE2.webp">
+  <ul>
+    <li><a href="mob.html" onclick="goToMob(0)">Cow</a></li>
+    <li><a href="mob.html" onclick="goToMob(1)">Wolf</a></li>
+    <li><a href="mob.html" onclick="goToMob(2)">Sheep</a></li>
+    <li><a href="mob.html" onclick="goToMob(3)">Pig</a></li>
+    <li><a href="mob.html" onclick="goToMob(4)">Chicken</a></li>
+    <li><a href="mob.html" onclick="goToMob(5)">Enderdragon</a></li>
+    <li><a href="mob.html" onclick="goToMob(6)">Zombie</a></li>
+    <li><a href="mob.html" onclick="goToMob(7)">Skeleton</a></li>
+    <li><a href="mob.html" onclick="goToMob(8)">Enderman</a></li>
+    <li><a href="mob.html" onclick="goToMob(9)">Strider</a></li>
+  </ul>
+  
+ </div>
+ 
+</body>
+
+<script>
+  function goToMob(mobName) {
+    localStorage.setItem("mobName",mobName);
+    window.location = "mob.html"
+  }
+</script>
+
+</html>
