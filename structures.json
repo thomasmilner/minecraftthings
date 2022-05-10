@@ -1,0 +1,11 @@
+{"structures":[{"name":"Desert Temple","origin":"Desert","description":"A pyrimaid like structure found in deserts four chests are under the center of the floor but theres a TNT trap in the center"},
+    {"name":"Jungle Temple","hardness":"30","origin":"Jungle","description":"A Cobblestone structure that has 2 chests witch there are traps guarding them"},
+    {"name":"Village","origin":"Plains, Meadow, Savanna, Snowy Taiga, Snowy Plains, Sunflower Plains, Taiga","description":"Villigers, Iron Golems & Cats spawn there. there is also a 2% chance a village will be a abandoned village"},
+    {"name":"Mineshaft","hardness":"0.8","origin":"Desert & beach","craftable":"Yes","stackable":"Yes","description":"Also has Chiseled Sandstone, Cut Sandstone & Chissled Sandstone varients, also has red sandstone"},
+    {"name":"End City & End ship","hardness":"2","origin":"Caves","craftable":"No","stackable":"Yes","description":"Has mossy cobblestone varient crafted with 1 vine and 1 cobblestone "},\
+    {"name":"Bastion","hardness":"2","origin":"Forest","craftable":"No","stackable":"Yes","description":"Most popular tree in game "},\
+    {"name":"Nether fortress","hardness":"0.5","origin":"Most overworld biomes","craftable":"No","stackable":"Yes","description":"Has varients:Grass block, Coarse Dirt, Rooted Dirt, Dirt path, Podzol, Mycelium, warped nylium & crimson nylium along with the A Very Fine Item item from april fools 2020 Java Edition 20w14∞ "},\
+    {"name":"Witch Hut","hardness":"0.5","origin":"Old Growth Taiga & Bamboo Jungles","craftable":"No","stackable":"Yes","description":"One of the two blocks were mushrooms can grow on the surface "},\
+    {"name":"Ocean Monument","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "},\
+    {"name":"Woodland Mansion","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "}\
+]}

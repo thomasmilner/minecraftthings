@@ -26,7 +26,8 @@
     const myArray = JSON.parse(myJSON);
 
     function myBlock()
-        iPos = localStorage.getItem("blockName");
+    {
+        var iPos = localStorage.getItem("blockName");
 
         document.getElementById("myName").innerHTML = myArray.blocks[iPos].name;
         document.getElementById("myHardness").innerHTML = myArray.blocks[iPos].hardness;
@@ -38,7 +39,7 @@
         const imgName = myArray.blocks[iPos].name.replace(' ','');
         const img = document.querySelector("img");
         img.src="images/block_" + imgName + ".webp";
-        
+    }   
   </script>
 </head>
 

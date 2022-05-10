@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Structures</h1>
+  
+  <div class="column2">
+  <img src="Cobblestone.webp"><img src="Terracotta_JE2_BE2.webp">
+  <ul>
+    <li><a href="structure.html" onclick="goToStructure(0)">Desert Temple</a></li>
+    <li><a href="structure.html" onclick="goToStructure(1)">Jungle Temple</a></li>
+    <li><a href="structure.html" onclick="goToStructure(2)">Village</a></li>
+    <li><a href="structure.html" onclick="goToStructure(3)">Mineshaft</a></li>
+    <li><a href="structure.html" onclick="goToStructure(4)">End City & End Ship</a></li>
+    <li><a href="structure.html" onclick="goToStructure(5)">Bastion</a></li>
+    <li><a href="structure.html" onclick="goToStructure(6)">Nether Fortress</a></li>
+    <li><a href="structure.html" onclick="goToStructure(7)">Witch Hut</a></li>
+    <li><a href="structure.html" onclick="goToStructure(8)">Ocean Monument</a></li>
+    <li><a href="structure.html" onclick="goToStructure(9)">Woodland Mansion</a></li>
+  </ul>
+  
+ </div>
+ 
+</body>
+
+<script>
+  function goToStructure(structureName) {
+    localStorage.setItem("structureName",structureName);
+    window.location = "structure.html"
+  }
+</script>
+
+</html>

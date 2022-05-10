@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Biomes</h1>
+  
+  <div class="column2">
+  <img src="Cobblestone.webp"><img src="Terracotta_JE2_BE2.webp">
+  <ul>
+    <li><a href="Biome.html" onclick="goToBiome(0)">Desert</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(1)">Savanna</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(2)">Plains</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(3)">Jungle</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(4)">Forest</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(5)">Dark Forest</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(6)">Swamp</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(7)">Soul Sand Valley</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(8)">Enderman</a></li>
+    <li><a href="Biome.html" onclick="goToBiome(9)">Badlands</a></li>
+  </ul>
+  
+ </div>
+ 
+</body>
+
+<script>
+  function goToBiome(biomeName) {
+    localStorage.setItem("biomeName",biomeName);
+    window.location = "biome.html"
+  }
+</script>
+
+</html>

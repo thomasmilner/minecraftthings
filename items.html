@@ -4,16 +4,21 @@
 
 </head>
 <body>
-  <h1>Blocks</h1>
+  <h1>Items</h1>
   
-  <ul> 
- <div class="column1">
-    <li><a href="block.html" onclick="goToBlock('Amethyst Shard')">Amethyst Shard</a></li>
-    <li><a href="block.html" onclick="goToBlock('')">Amethyst Shard</a></li>
-    <li><a href="block.html" onclick="goToBlock('Blaze Rod')">Blaze Rod/Blaze Powder</a></li>
-    <li><a href="block.html" onclick="goToBlock('Bone')">Bone</a></li>
-    <li><a href="block.html" onclick="goToBlock('Clay ball')">Clay ball</a></li>
-    <li><a href="block.html" onclick="goToBlock('Coal')">Coal</a></li>
+  <div class="column2">
+  <img src="Cobblestone.webp"><img src="Terracotta_JE2_BE2.webp">
+  <ul>
+    <li><a href="item.html" onclick="goToItem(0)">Pickaxe</a></li>
+    <li><a href="item.html" onclick="goToItem(1)">Sword</a></li>
+    <li><a href="item.html" onclick="goToItem(2)">Blaze Rod</a></li>
+    <li><a href="item.html" onclick="goToItem(3)">Clay Ball</a></li>
+    <li><a href="item.html" onclick="goToItem(4)">Amethyst Shard</a></li>
+    <li><a href="item.html" onclick="goToItem(5)">Gold Ingot</a></li>
+    <li><a href="item.html" onclick="goToItem(6)">Netherite Ingot</a></li>
+    <li><a href="item.html" onclick="goToItem(7)">Ender Pearl</a></li>
+    <li><a href="item.html" onclick="goToItem(8)">Diamond</a></li>
+    <li><a href="item.html" onclick="goToItem(9)">Lava Bucket</a></li>
   </ul>
   
  </div>
@@ -21,9 +26,9 @@
 </body>
 
 <script>
-  function goToBlock(blockName) {
-    localStorage.setItem("blockName",blockName);
-    window.location = "block.html"
+  function goToItem(itemName) {
+    localStorage.setItem("itemName",itemName);
+    window.location = "item.html"
   }
 </script>
 

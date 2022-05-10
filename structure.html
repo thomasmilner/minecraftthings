@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+  <script>
+    //var name = "Ice";
+    //var hardness = "0.5";
+    //var origin = "Ice Spikes & Snowy Taiga";
+    //var craftable = "No";
+    //var stackable = "Yes";
+    //var description = "Only obtainable with silk touch, Running & Rowing on ice goes faster than on normal blocks";
+
+
+    const myJSON = '{"structures":[{"name":"Desert Temple","origin":"Desert","description":"A pyrimaid like structure found in deserts four chests are under the center of the floor but theres a TNT trap in the center"},\
+                                {"name":"Jungle Temple","hardness":"30","origin":"Jungle","description":"A Cobblestone structure that has 2 chests witch there are traps guarding them"},\
+                                {"name":"Village","origin":"Plains, Meadow, Savanna, Snowy Taiga, Snowy Plains, Sunflower Plains, Taiga","description":"Villagers, Iron Golems & Cats spawn there. there is also a 2% chance a village will be a abandoned village "},\
+                                {"name":"Mineshaft","hardness":"0.8","origin":"All overworld biomes ","craftable":"Yes","stackable":"Yes","description":"Has a badlands vatrient"},\
+                                {"name":"End City and End Ship","hardness":"2","origin":"End","craftable":"No","stackable":"Yes","description":"A large purpur structure where shulkers spawn"},\
+                                {"name":"Bastion","hardness":"2","origin":"Forest","craftable":"No","stackable":"Yes","description":"Most popular tree in game "},\
+                                {"name":"Nether fortress","hardness":"0.5","origin":"Most overworld biomes","craftable":"No","stackable":"Yes","description":"Has varients:Grass block, Coarse Dirt, Rooted Dirt, Dirt path, Podzol, Mycelium, warped nylium & crimson nylium along with the A Very Fine Item item from april fools 2020 Java Edition 20w14∞ "},\
+                                {"name":"Witch Hut","hardness":"0.5","origin":"Old Growth Taiga & Bamboo Jungles","craftable":"No","stackable":"Yes","description":"One of the two blocks were mushrooms can grow on the surface "},\
+                                {"name":"Ocean Monument","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "},\
+                                {"name":"Woodland Mansion","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "}\
+                           ]}'
+        
+    const myArray = JSON.parse(myJSON);
+
+    function myStructure()
+    {
+        var iPos = localStorage.getItem("structureName");
+
+        document.getElementById("myName").innerHTML = myArray.structures[iPos].name;
+        document.getElementById("myOrigin").innerHTML = myArray.structures[iPos].origin;
+        document.getElementById("myDescription").innerHTML = myArray.structures[iPos].description;
+
+        const imgName = myArray.structures[iPos].name.replaceAll(' ','');
+        const img = document.querySelector("img");
+        img.src="images/structure_" + imgName + ".webp";
+    }   
+  </script>
+</head>
+
+<body onload="myStructure()">
+    <img/>
+    <table>
+    <tr>
+    <td id="name">Name:</td><td id="value"> <span id="myName"></span></td>
+</tr>
+<tr>
+    <td id="name">Origin:</td><td id="value"> <span id="myOrigin"></span></td>
+</tr>
+<tr>
+    <td id="name">Description:</td><td id="value"><span id="myDescription"></span></td>
+</tr>
+</table>
+</body>
+
+</html>

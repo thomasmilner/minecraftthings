@@ -1,7 +1,0 @@
-{
-    "blocks":
-    [
-        {"name":"Ice","hardness":"0.5","origin":"Ice Spikes & Snowy Taiga","craftable":"No","stackable":"Yes","description":"Only obtainable with silk touch, Running & Rowing on ice goes faster than on normal blocks"},
-        {"name":"Ancient Debris","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "}
-    ]
-}

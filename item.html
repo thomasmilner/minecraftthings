@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+  <script>
+    //var name = "Ice";
+    //var hardness = "0.5";
+    //var origin = "Ice Spikes & Snowy Taiga";
+    //var craftable = "No";
+    //var stackable = "Yes";
+    //var description = "Only obtainable with silk touch, Running & Rowing on ice goes faster than on normal blocks";
+
+
+    const myJSON = '{"items":[{"name":"Pickaxe","hardness":"0.5","origin":"Ice Spikes & Snowy Taiga","craftable":"No","stackable":"Yes","description":"Only obtainable with silk touch, Running & Rowing on ice goes faster than on normal blocks"},\
+                                {"name":"Sword","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "},\
+                                {"name":"Blaze Rod","hardness":" 0.5","origin":"Desert & beach","craftable":"No","stackable":"Yes","description":"Can be smellted into glass, has another varient called red sand "},\
+                                {"name":"Clay Ball","hardness":"0.8","origin":"Desert & beach","craftable":"Yes","stackable":"Yes","description":"Also has Chiseled Sandstone, Cut Sandstone & Chissled Sandstone varients, also has red sandstone"},\
+                                {"name":"Amethyst Shard","hardness":"2","origin":"Caves","craftable":"No","stackable":"Yes","description":"Has mossy cobblestone varient crafted with 1 vine and 1 cobblestone "},\
+                                {"name":"Gold Ingot","hardness":"2","origin":"Forest","craftable":"No","stackable":"Yes","description":"Most popular tree in game "},\
+                                {"name":"Netherite Ingot","hardness":"0.5","origin":"Most overworld biomes","craftable":"No","stackable":"Yes","description":"Has varients:Grass block, Coarse Dirt, Rooted Dirt, Dirt path, Podzol, Mycelium, warped nylium & crimson nylium along with the A Very Fine Item item from april fools 2020 Java Edition 20w14∞ "},\
+                                {"name":"Ender Pearl","hardness":"0.5","origin":"Old Growth Taiga & Bamboo Jungles","craftable":"No","stackable":"Yes","description":"One of the two blocks were mushrooms can grow on the surface "},\
+                                {"name":"Diamond","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "},\
+                                {"name":"Lava Bucket","hardness":"30","origin":"All Nether biomes","craftable":"No","stackable":"Yes","description":"Second rarest ore in game, smelted into netherite scrap and with 4 netherite & 4 Gold ingots to make a netherite ingot to upgrade diamond armour "}\
+                           ]}'
+        
+    const myArray = JSON.parse(myJSON);
+
+    function myItem()
+    {
+        var iPos = localStorage.getItem("itemName");
+
+        document.getElementById("myName").innerHTML = myArray.items[iPos].name;
+        document.getElementById("myHardness").innerHTML = myArray.items[iPos].hardness;
+        document.getElementById("myOrigin").innerHTML = myArray.items[iPos].origin;
+        document.getElementById("myCraftable").innerHTML = myArray.items[iPos].craftable;
+        document.getElementById("myStackable").innerHTML = myArray.items[iPos].stackable;
+        document.getElementById("myDescription").innerHTML = myArray.items[iPos].description;
+
+        const imgName = myArray.items[iPos].name.replace(' ','');
+        const img = document.querySelector("img");
+        img.src="images/item_" + imgName + ".webp";
+    }   
+  </script>
+</head>
+
+<body onload="myItem()">
+    <img/>
+    <table>
+    <tr>
+    <td id="name">Name:</td><td id="value"> <span id="myName"></span></td>
+</tr>
+<tr>
+    <td>Hardness:</td><td id="value"> <span id="myHardness"></span></h1></td>
+</tr>
+<tr>
+    <td id="name">Origin:</td><td id="value"> <span id="myOrigin"></span></td>
+</tr>
+<tr>
+    <td id="name">Craftable:</td><td id="value"><span id="myCraftable"></span></td>
+</tr>
+<tr>
+    <td id="name">Stackable:</td><td id="value"> <span id="myStackable"></span></td>
+</tr>
+<tr>
+    <td id="name">Description:</td><td id="value"><span id="myDescription"></span></td>
+</tr>
+</table>
+</body>
+
+</html>
